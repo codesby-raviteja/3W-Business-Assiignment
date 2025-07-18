@@ -68,7 +68,7 @@ userRoute.get("/users", async (req, res) => {
 
     //sending data back to client
     res.status(200).json({
-      statu: 200,
+      status: 200,
       data: {
         users,
         totalUsers: totalUsers,

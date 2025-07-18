@@ -6,9 +6,19 @@ import cors from "cors";
 const app = express();
 const port = 4000;
 
+
+//Local Deployment
+
+// app.use(
+//   cors({
+//     origin: "http://localhost:5173",
+//   })
+// );
+
+//Deployed on netlify
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://3wbusinessassignment.netlify.app",
   })
 );
 
