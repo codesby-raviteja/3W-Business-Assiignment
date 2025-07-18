@@ -28,6 +28,13 @@ app.use("/", (err, req, res, next) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.json({
+    activeStatus: "True",
+    Error: false,
+  });
+});
+
 connectDatabase()
   .then(() => {
     console.log("Database connection was successfully.");
